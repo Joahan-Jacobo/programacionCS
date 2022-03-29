@@ -16,7 +16,7 @@ const updateUserValidators = () => [
     check('name').isLength({max:50}).withMessage("Invalid name"),
     check('lastname').isLength({max:50}).withMessage("Invalid lastname"),
     check('phone').optional().isLength({min:10, max:10}).isNumeric().withMessage("Invalid phone (10 numbers)"),
-    check('address').isLength({max:150}).withMessage("Invalid adress")
+    check('address').isLength({max:150}).withMessage("Invalid address")
  ]
 
 const reporter = (req, res, next) => {
